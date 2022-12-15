@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun updateGreetingMessage() {
-        binding.etUsername.addTextChangedListener { name: Editable? ->
+        binding.etName.addTextChangedListener { name: Editable? ->
 
             val updatedMessage = getString(R.string.greeting_message, name)
             val presenter = MainActivityGreetingPresenter(updatedMessage)
